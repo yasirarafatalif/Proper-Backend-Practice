@@ -1,12 +1,92 @@
 [
-    {
-        "id": 1,
-        "name": "Alice",
-        "email": "Alfaisuj"
-    },
-    {
-        "id": 2,
-        "name": "Bob",
-        "email": "alifsna"
-    }
+  {
+    "id": 101,
+    "name": "AeroGlide Wireless Ergonomic Mouse",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock_status": "In Stock",
+    "rating": 4.7,
+    "description": "An ergonomic wireless mouse designed to reduce wrist strain. Features a high-precision 16,000 DPI optical sensor, customizable macro buttons, and a silent-click mechanism with up to 50 hours of battery life on a single charge."
+  },
+  {
+    "id": 102,
+    "name": "HydroPeak Double-Walled Water Bottle",
+    "category": "Sports & Outdoors",
+    "price": 24.50,
+    "stock_status": "Low Stock",
+    "rating": 4.8,
+    "description": "A vacuum-insulated, stainless steel water bottle that keeps drinks ice-cold for 24 hours or piping hot for 12 hours. Features a leak-proof straw lid and a durable, sweat-free powder coat finish."
+  },
+  {
+    "id": 103,
+    "name": "Lumina RGB LED Smart Light Strip",
+    "category": "Home Decor",
+    "price": 34.99,
+    "stock_status": "In Stock",
+    "rating": 4.5,
+    "description": "A 16.4ft flexible smart LED strip with voice control capabilities via Alexa and Google Assistant. Supports millions of colors, music sync modes, and custom scheduling through a dedicated mobile app."
+  },
+  {
+    "id": 104,
+    "name": "ZenBrew Pour-Over Coffee Maker Set",
+    "category": "Kitchen & Dining",
+    "price": 42.00,
+    "stock_status": "In Stock",
+    "rating": 4.6,
+    "description": "An elegant borosilicate glass carafe complete with a reusable double-layer stainless steel mesh filter. Engineered to extract the rich oils and subtle flavors of your favorite coffee beans without paper filters."
+  },
+  {
+    "id": 105,
+    "name": "NovaSound Active Noise Cancelling Headphones",
+    "category": "Electronics",
+    "price": 129.99,
+    "stock_status": "Out of Stock",
+    "rating": 4.9,
+    "description": "Premium over-ear headphones featuring hybrid active noise cancellation technology, high-resolution audio drivers, and soft memory foam earcups. Includes a built-in mic for crystal-clear calls and a 40-hour battery life."
+  },
+  {
+    "id": 106,
+    "name": "FlexiCore Non-Slip Yoga Mat",
+    "category": "Fitness",
+    "price": 38.00,
+    "stock_status": "In Stock",
+    "rating": 4.4,
+    "description": "An eco-friendly, 6mm extra-thick yoga mat made from textured, non-toxic TPE material. Provides optimal cushioning and superior dual-sided grip for hot yoga, Pilates, and general floor workouts."
+  },
+  {
+    "id": 107,
+    "name": "EverRead E-Ink E-Reader",
+    "category": "Electronics",
+    "price": 109.99,
+    "stock_status": "In Stock",
+    "rating": 4.7,
+    "description": "A lightweight 6-inch e-reader featuring a glare-free, paper-like E-ink display. Includes an adjustable warm front light for comfortable night reading, IPX8 waterproof protection, and 8GB of storage for thousands of books."
+  },
+  {
+    "id": 108,
+    "name": "TerraGrip Waterproof Hiking Boots",
+    "category": "Apparel & Footwear",
+    "price": 89.95,
+    "stock_status": "Low Stock",
+    "rating": 4.3,
+    "description": "Durable all-weather hiking boots featuring a breathable waterproof membrane, protective toe caps, and a high-traction rubber outsole designed to grip wet and rugged terrain securely."
+  },
+  {
+    "id": 109,
+    "name": "SolCharge Outdoor Portable Power Bank",
+    "category": "Electronics",
+    "price": 45.99,
+    "stock_status": "In Stock",
+    "rating": 4.5,
+    "description": "A heavy-duty 20,000mAh external battery pack built for the outdoors. Equipped with a backup solar panel charging array, dual quick-charge USB ports, and an integrated multi-mode LED flashlight."
+  },
+  {
+    "id": 110,
+    "name": "BioGlow Organic Vitamin C Serum",
+    "category": "Beauty & Personal Care",
+    "price": 18.50,
+    "stock_status": "In Stock",
+    "rating": 4.6,
+    "description": "An advanced anti-aging facial serum formulated with 20% active Vitamin C, Hyaluronic Acid, and Vitamin E. Designed to brighten dark spots, even out skin tone, and boost natural collagen production."
+  }
 ]
