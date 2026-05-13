@@ -2,6 +2,7 @@ import type { IncomingMessage, ServerResponse } from "http";
 import { readProducts, writeProducts } from "../services/products.services";
 import type { Product } from "../types/product.type";
 import { parseBody } from "../utility/pareseBody";
+import { sendResponse } from "../utility/sendResponse";
 
 export const productsController = async (
   req: IncomingMessage,
@@ -12,29 +13,17 @@ export const productsController = async (
   const id = urlPath && urlPath[1] === "products" ? Number(urlPath[2]) : null;
   if (method === "GET" && url === "/products") {
     const productData = readProducts();
-    res.writeHead(200, { "content-type": "application/json" });
-    res.end(
-      JSON.stringify({
-        message: "Products controller List",
-        data: productData,
-      }),
-    );
+    sendResponse(res,200,true,"Products retrieved successfully", productData)
   } else if (method === "GET" && id !== null) {
     const productData = readProducts();
     const product = productData.find((p: Product) => p.id === id);
-    console.log(product)
     if (product == "undefined") {
-      res.writeHead(404, { "Content-Type": "application/json" });
-      res.end(JSON.stringify({ error: "Product not found" }));
+      sendResponse(res,404,false,"Product not found")
     }
-
-    console.log(product)
     if (product) {
-      res.writeHead(200, { "content-type": "application/json" });
-      res.end(JSON.stringify({ message: "Product found", data: product }));
+      sendResponse(res,200,true,"Product found", product)
     } else {
-      res.writeHead(404, { "Content-Type": "application/json" });
-      res.end(JSON.stringify({ error: "Product not found" }));
+      sendResponse(res,404,false,"Product not found")
     }
   } else if (method === "POST" && url === "/products") {
     const body = await parseBody(req);
@@ -45,23 +34,18 @@ export const productsController = async (
     };
     productData.push(newProduct);
     writeProducts(productData);
-    res.writeHead(200, { "content-type": "application/json" });
-    res.end(JSON.stringify({ message: "Product created", data: newProduct }));
+    sendResponse(res,200,true,"Product created", newProduct);
   } else if (method === "PUT" && id !== null) {
     const body = await parseBody(req);
     const product = readProducts();
     const index = product.findIndex((p: Product) => p.id === id);
 
     if (index < 0) {
-      res.writeHead(404, { "Content-Type": "application/json" });
-      res.end(JSON.stringify({ error: "Product not found" }));
+      sendResponse(res,404,false,"Product not found");
     }
     product[index] = { ...product[index], ...body };
     writeProducts(product);
-    res.writeHead(200, { "content-type": "application/json" });
-    res.end(
-      JSON.stringify({ message: "Product updated", data: product[index] }),
-    );
+    sendResponse(res,200,true,"Product updated", product[index]);
   } else if (method === "DELETE" && id !== null) {
     const body = await parseBody(req);
     const product = readProducts();
@@ -76,7 +60,6 @@ export const productsController = async (
     res.writeHead(200, { "content-type": "application/json" });
     res.end(JSON.stringify({ message: "Product deleted" }));
   } else {
-    res.writeHead(404, { "Content-Type": "application/json" });
-    res.end(JSON.stringify({ error: "Not Found" }));
+    sendResponse(res,404,false,"Not Found");
   }
 };
