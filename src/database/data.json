@@ -82,15 +82,6 @@
   },
   {
     "id": 110,
-    "name": "BioGlow Organic Vitamin C Serum",
-    "category": "Beauty & Personal Care",
-    "price": 18.5,
-    "stock_status": "In Stock",
-    "rating": 4.6,
-    "description": "An advanced anti-aging facial serum formulated with 20% active Vitamin C, Hyaluronic Acid, and Vitamin E. Designed to brighten dark spots, even out skin tone, and boost natural collagen production."
-  },
-  {
-    "id": 111,
     "name": "AeroGlide Wireless Ergonomic ",
     "category": "Electronics",
     "price": 59.99,
