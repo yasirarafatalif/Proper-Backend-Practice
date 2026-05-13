@@ -12,7 +12,7 @@
     "id": 102,
     "name": "HydroPeak Double-Walled Water Bottle",
     "category": "Sports & Outdoors",
-    "price": 24.50,
+    "price": 24.5,
     "stock_status": "Low Stock",
     "rating": 4.8,
     "description": "A vacuum-insulated, stainless steel water bottle that keeps drinks ice-cold for 24 hours or piping hot for 12 hours. Features a leak-proof straw lid and a durable, sweat-free powder coat finish."
@@ -30,7 +30,7 @@
     "id": 104,
     "name": "ZenBrew Pour-Over Coffee Maker Set",
     "category": "Kitchen & Dining",
-    "price": 42.00,
+    "price": 42,
     "stock_status": "In Stock",
     "rating": 4.6,
     "description": "An elegant borosilicate glass carafe complete with a reusable double-layer stainless steel mesh filter. Engineered to extract the rich oils and subtle flavors of your favorite coffee beans without paper filters."
@@ -48,7 +48,7 @@
     "id": 106,
     "name": "FlexiCore Non-Slip Yoga Mat",
     "category": "Fitness",
-    "price": 38.00,
+    "price": 38,
     "stock_status": "In Stock",
     "rating": 4.4,
     "description": "An eco-friendly, 6mm extra-thick yoga mat made from textured, non-toxic TPE material. Provides optimal cushioning and superior dual-sided grip for hot yoga, Pilates, and general floor workouts."
@@ -84,9 +84,18 @@
     "id": 110,
     "name": "BioGlow Organic Vitamin C Serum",
     "category": "Beauty & Personal Care",
-    "price": 18.50,
+    "price": 18.5,
     "stock_status": "In Stock",
     "rating": 4.6,
     "description": "An advanced anti-aging facial serum formulated with 20% active Vitamin C, Hyaluronic Acid, and Vitamin E. Designed to brighten dark spots, even out skin tone, and boost natural collagen production."
+  },
+  {
+    "id": 111,
+    "name": "AeroGlide Wireless Ergonomic ",
+    "category": "Electronics",
+    "price": 59.99,
+    "stock_status": "In Stock",
+    "rating": 4.7,
+    "description": "ilent-click me."
   }
 ]
